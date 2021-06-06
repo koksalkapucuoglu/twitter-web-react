@@ -1,4 +1,9 @@
-.titleBold{
+.title{
   font-size: 19px;
+  display: block;
+
+}
+
+.bold{
   font-weight: bold;
 }

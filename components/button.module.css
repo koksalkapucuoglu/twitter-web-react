@@ -1,6 +1,24 @@
 .button {
   cursor: pointer;
   background: transparent;
-  color: white;
+  color: var(--c-text-color);
+  border-radius: 99px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: var(--fade);
+
+  & + button {
+      margin-left: 0px;
+    }
+
+  &:hover {
+    color: var(--c-theme);
+    background-color: var(--c-theme-20);
+  }
 }
 
+
+.fullWidth{
+  width: 100% !important;
+}
