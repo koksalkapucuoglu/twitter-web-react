@@ -11,7 +11,9 @@ function ProfileBox({ slug = "koksal", name = "Köksal Kapucuoğlu" }) {
     <Button className={cn([styles.box])}>
       <Photo />
       <div className={styles.body}>
-        <TextBody bold>{name}</TextBody>
+        <TextBody bold>
+          {name.length > 12 ? name.substring(0, 13) + "..." : name}
+        </TextBody>
         <TextBody className={styles.slug}>@{slug}</TextBody>
       </div>
       <ArrowBottom className={styles.icon} />

@@ -9,8 +9,8 @@
   transition: var(--fade);
 
   & + button {
-      margin-left: 0px;
-    }
+    margin-left: 0px;
+  }
 
   &:hover {
     color: var(--c-theme);
@@ -18,7 +18,6 @@
   }
 }
 
-
-.fullWidth{
+.fullWidth {
   width: 100% !important;
 }

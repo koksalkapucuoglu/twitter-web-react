@@ -1,29 +1,20 @@
-.box{
+.box {
+  padding: 10px;
 
-    padding: 10px;
-
-    &:hover{
+  &:hover {
     color: var(--c-text-color);
-     }
+  }
 }
-.body{
-    margin-left: 10px;
-    margin-right: 20px;
+.body {
+  margin-left: 10px;
+  margin-right: 20px;
 
-
-
-    .slug{
-        color: var(--c-gray);
-
-    }
-
+  .slug {
+    color: var(--c-gray);
+  }
 }
 
-.icon{
-    margin-left: auto;
-}
-
-div > p {
-    margin: 0;
+.icon {
+  margin-left: auto;
 }
 
