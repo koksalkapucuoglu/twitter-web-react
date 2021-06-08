@@ -6,23 +6,19 @@
   align-items: center;
   @media (--d) {
     align-items: flex-start;
-
+    padding-right: 46px;
   }
-
 }
 
 .profile {
   margin-top: auto;
-
 }
 
 .tweet {
-
   margin-top: 16px;
   margin-bottom: 20px;
 
   @media (--d) {
     width: 100%;
-    
   }
 }
