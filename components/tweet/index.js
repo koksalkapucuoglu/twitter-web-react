@@ -32,14 +32,14 @@ function Tweet({ name, slug, datetime, text }) {
           </div>
             {/*Retweet*/}
             <div className={styles.footerButton}>
-                <IconButton className={styles.actionButton}>
-                    <Icon.Retweet />
+                <IconButton className={`${styles.actionButton} ${styles.hoverRetweet}`}>
+                    <Icon.Retweet/>
                 </IconButton>
                 <span>12</span>
             </div>
             {/*Like*/}
             <div className={styles.footerButton}>
-                <IconButton className={styles.actionButton}>
+                <IconButton className={`${styles.actionButton} ${styles.hoverLike}`}>
                     <Icon.Like />
                 </IconButton>
             </div>
