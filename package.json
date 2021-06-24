@@ -19,7 +19,8 @@
     "date-fns": "^2.22.1",
     "next": "^10.2.3",
     "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "react-dom": "^17.0.2",
+    "twit": "^2.2.11"
   },
   "devDependencies": {
     "@babel/core": "^7.14.3",
