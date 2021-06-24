@@ -4,7 +4,7 @@ import { useState, useEffect, useLayoutEffect } from "react";
 export default function MyApp({ Component, pageProps }) {
   const [theme, themeSet] = useState(null);
 
-  useLayoutEffect(() => {
+  useEffect(() => {
     const theme = localStorage.getItem("THEME") || "light";
     themeSet(theme);
   }, []);
