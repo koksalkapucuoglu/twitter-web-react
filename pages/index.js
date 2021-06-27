@@ -1,9 +1,13 @@
 import React from "react";
 import useSWR from "swr";
 
+import styles from "./index.module.css";
+
 import Layout from "../components/layout";
 import Tweet from "../components/tweet";
 import fetcher from "../lib/fetch";
+import Loading from "../components/loading";
+
 
 function HomePage() {
   const { data, error } = useSWR("/api/tweet", fetcher);
@@ -11,7 +15,11 @@ function HomePage() {
   return (
     <Layout>
       {/* varsa dataloading'i göster*/}
-      {!data && <p>Loading</p>}
+      {!data && (
+        <div className={styles.loading}>
+          <Loading />
+        </div>
+      )}
 
       {data?.statuses.map((tweet) => {
         return <Tweet key={tweet.id} {...tweet} />;
