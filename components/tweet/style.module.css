@@ -75,3 +75,11 @@
    background-color: var(--c-theme-10);
  }
 }
+
+.liked{
+    color: rgb(224,36,94);
+}
+
+.retweeted{
+    color: rgb(23,191,99);
+}
